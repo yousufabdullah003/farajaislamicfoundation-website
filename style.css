@@ -1,0 +1,291 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background-color: #ffffff;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a{
+    text-decoration: none;
+    color: #222;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #0b6b3a;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0b6b3a
+} 
+
+.search form {
+    display: flex;
+}
+
+.search input {
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.search button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #0b6b3a;
+    color: white;
+    cursor: pointer;
+}
+
+.dashboard-btn {
+    text-decoration: none;
+    padding: 10px 18px;
+    background-color: #0b6b3a;
+    color: white;
+    border-radius: 5px;
+}
+
+.dashboard-btn:hover {
+    background-color: #09572f;
+}
+
+.hero {
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #f1f8f4;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    max-width: 800px;
+}
+
+.hero p {
+    font-size: 18px;
+    max-width: 700px;
+    margin-bottom: 30px;
+}
+
+.hero a {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #0b6b3a;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.hero a:hover {
+    background-color: #09572f;
+}
+
+.programs {
+    padding: 60px 50px;
+}
+
+.programs h2 {
+    grid-column: 1 / -1;
+}
+
+.programs {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.programs article{
+    padding: 30px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.about {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 60px 50px;
+}
+
+.about a {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #0b6b3a;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.features {
+    padding: 60px 50px;
+}
+
+.features h2 {
+    grid-column: 1 / -1;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.features article{
+    padding: 30px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.gallery {
+    padding: 60px 50px;
+    text-align: center;
+}
+
+.gallery-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.gallery-container img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.gallery-category h3 {
+    margin-bottom: 15px;
+}
+
+.news-events {
+    padding: 60px 50px;
+}
+
+.news-events h2 {
+    grid-column: 1 / -1;
+}
+
+.news-events {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.news-events article{
+    padding: 30px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.cta {
+    text-align: center;
+    padding: 60px 50px;
+    background-color: #f1f8f4;
+}
+
+.cta a {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #0b6b3a;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 0 10px;
+}
+
+.footer-about,
+.footer-links,
+.footer-contact,
+.footer-social {
+    flex: 1;
+    min-width: 200px;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+    background-color: #0b6b3a;
+    color: white;
+    gap: 30px;
+}
+
+footer h3 {
+    margin-bottom: 15px;
+}
+
+footer a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 8px;
+}
+
+footer-bottom {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+     header {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+        .programs {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .features {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .news-events {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+        .hero h1 {
+        font-size: 28px;
+    }
+
+        .gallery-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}

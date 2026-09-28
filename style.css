@@ -300,4 +300,10 @@ footer a {
     .nav-active {
      display: flex;
     }
+
+    .cta a {
+        display: block;
+        margin: 10px auto;
+        max-width: 250p;
+    }
 }

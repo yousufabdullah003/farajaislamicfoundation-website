@@ -258,6 +258,83 @@ footer a {
     margin-top: 20px;
 }
 
+#chat-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: #f0a500;
+    color: white;
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+#chat-window {
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    width: 300px;
+    max-height: 400px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    overflow-y: auto;
+    z-index: 1000;
+}
+
+.hidden {
+    display: none;
+}
+
+.chat-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 15px;
+    background-color: #333333;
+    color: white;
+    border-radius: 10px 10px 0 0;
+}
+
+.chat-header button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.chat-body {
+    padding: 15px;
+}
+
+#chat-questions {
+    list-style: none;
+}
+
+#chat-questions li {
+    padding: 8px 10px;
+    margin-bottom: 8px;
+    background-color: #f1f8f4;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#chat-questions li:hover {
+    background-color: #e0efe6;
+}
+
+#chat-answer {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #fff8e6;
+    border-radius: 6px;
+}
+
 @media (max-width: 768px) {
      header {
         flex-direction: column;

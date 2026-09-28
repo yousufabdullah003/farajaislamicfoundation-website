@@ -217,6 +217,24 @@ navLinks.forEach(function (link) {
         </p>
     </div>
 </footer>
+<button id="chat-toggle">💬</button>
+
+<div id="chat-window" class="hidden">
+    <div class="chat-header">
+        <h3>Msaada wa Faraja</h3>
+        <button id="chat-close">✕</button>
+    </div>
+
+    <div class="chat-body">
+        <p>Karibu! Chagua swali:</p>
+        <ul id="chat-questions">
+            <li data-answer="Admissions zinafunguka Januari na Julai kila mwaka.">Admissions zinaanza lini?</li>
+            <li data-answer="Piga simu +255 713 256 056 au tuma barua pepe info@faraja.org">Mawasiliano ni yapi?</li>
+            <li data-answer="Tunatoa elimu ya msingi na madrasa (Qur'an, Tahfidh, Islamic studies).">Mnafundisha nini?</li>
+        </ul>
+        <div id="chat-answer"></div>
+    </div>
+</div>
 <script src="script.js"></script>
 </body>
 </html>

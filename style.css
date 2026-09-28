@@ -281,7 +281,7 @@ footer a {
     max-height: 400px;
     background-color: white;
     border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 12px #03002e;
     overflow-y: auto;
     z-index: 1000;
 }
@@ -295,7 +295,7 @@ footer a {
     justify-content: space-between;
     align-items: center;
     padding: 12px 15px;
-    background-color: #333333;
+    background-color: #03002e;
     color: white;
     border-radius: 10px 10px 0 0;
 }
@@ -333,6 +333,62 @@ footer a {
     padding: 10px;
     background-color: #fff8e6;
     border-radius: 6px;
+}
+
+.chat-body {
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    padding: 10px;
+}
+
+#chat-messages {
+    flex: 1;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+.bot-msg,
+.user-msg {
+    max-width: 80%;
+    padding: 8px 12px;
+    border-radius: 12px;
+    font-size: 14px;
+}
+
+.bot-msg {
+    align-self: flex-start;
+    background-color: #f1f8f4;
+    border-bottom-left-radius: 2px;
+}
+
+.user-msg {
+    align-self: flex-end;
+    background-color: #f0a500;
+    color: white;
+    border-bottom-right-radius: 2px;
+}
+
+#chat-questions {
+    list-style: none;
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+}
+
+#chat-questions li {
+    padding: 8px 10px;
+    margin-bottom: 6px;
+    background-color: #fff8e6;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#chat-questions li:hover {
+    background-color: #ffedbf;
 }
 
 @media (max-width: 768px) {
@@ -381,6 +437,6 @@ footer a {
     .cta a {
         display: block;
         margin: 10px auto;
-        max-width: 250p;
+        max-width: 250px;
     }
 }

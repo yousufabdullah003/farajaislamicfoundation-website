@@ -26,8 +26,20 @@ chatClose.addEventListener("click", function () {
     chatWindow.classList.add("hidden");
 });
 
+const chatMessages = document.querySelector("#chat-messages");
+
 chatQuestions.forEach(function (question) {
     question.addEventListener("click", function () {
-        chatAnswer.textContent = question.dataset.answer;
+        const userMsg = document.createElement("div");
+        userMsg.className = "user-msg";
+        userMsg.textContent = question.textContent;
+        chatMessages.appendChild(userMsg);
+
+        const botMsg = document.createElement("div");
+        botMsg.className = "bot-msg";
+        botMsg.textContent = question.dataset.answer;
+        chatMessages.appendChild(botMsg);
+
+        chatMessages.scrollTop = chatMessages.scrollHeight;
     });
 });

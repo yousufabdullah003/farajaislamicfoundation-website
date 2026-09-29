@@ -258,6 +258,19 @@ footer a {
     margin-top: 20px;
 }
 
+.footer-bottom {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    margin-top: 20px;
+    margin-bottom: -50px;
+    padding: 15px;
+    text-align: center;
+    background-color: #000000;
+}
 #chat-toggle {
     position: fixed;
     bottom: 20px;
